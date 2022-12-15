@@ -1,0 +1,203 @@
+
+* {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-decoration: none;
+}
+   
+   header { 
+      
+      height: 90px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: black;
+      
+      
+      }
+      
+      Nav {
+          width: 60%;
+      }
+      
+      Ul {
+      
+           display: flex;
+           width: 100%;
+           justify-content: space-between;
+      }
+          
+      li { 
+             list-style: none;
+             color: aliceblue;
+             cursor: pointer;
+             font-size: 19px;
+             transition: .5s;
+             font-family: 'Kdam Thmor Pro', sans-serif;
+      
+      }
+      
+       li:hover {
+          color: rgb(20, 171, 209);
+       }
+
+       #logo { width: 90px;
+         height: auto;}
+
+
+main { width: 100%;
+   background: linear-gradient(to bottom, #00ffff 0%, #ccffff 77%);
+   background-position: center;
+background-size: cover;
+height: 150vh;
+margin-top: 0;
+}
+
+.cards-max {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cards-med {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 100px;
+ }
+
+ .card {
+    width: 350px;
+    margin-top: 30px;
+height: 600px;
+background-size: cover;
+background-position: 50% 50%;
+border-radius: 25px; 
+cursor: pointer;
+transition: 1s;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 0 0 20px 10px;
+border: solid;
+ }
+
+ .b1 {
+    background-image: url(https://cabanadoleitor.com.br/wp-content/uploads/2022/08/aquaman-2048x1152.webp);
+ }
+ .b2 {
+    background-image: url(https://minhaseriefavorita.com/wp-content/uploads/2022/08/mera-aquaman-3.jpg);
+ }.b3 {
+    background-image: url(https://i.pinimg.com/564x/66/d6/de/66d6dee633696ef6397d213422d847a6.jpg);
+ }.b4 {
+    background-image: url(https://iphoneswallpapers.com/wp-content/uploads/2018/12/Aquaman-and-Black-Manta-iPhone-Wallpaper.jpg);
+ }.b5 {
+    background-image: url(https://cinebuzz.uol.com.br/media/uploads/arraia-negra.jpg);
+ }.b6 {
+    background-image: url(https://spinoff.com.br/wp-content/uploads/aquaman-Yahya-Abdul-Mateen-1.jpg);
+ }.b7 {
+    background-image: url(https://www.correio24horas.com.br/fileadmin/_processed_/c/d/csm_Aquaman_3_21769d68ca.jpg);
+ }
+ .b8 {
+    background-image: url(https://i.pinimg.com/474x/99/b2/26/99b2262dd505710572e941ed7552e8b2.jpg);
+ }
+
+ .card:hover {
+    transform: scale(1.04);
+    border-radius: 35%;
+ }
+
+ footer { background-color: black;
+   height: 300px;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ justify-content: space-around;
+ }
+ #bruno { color: #00ffff;}
+
+ 
+ span {
+ color: aliceblue;
+ font-family: 'Kdam Thmor Pro', sans-serif ;
+ }
+ 
+ .footer-navigation {
+     display: none;
+ }
+ .footer-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .bolhas img{
+     width: 50px;
+     animation: bolhas 7s linear infinite;
+     
+ }
+ @keyframes bolhas { 
+     0% { transform: translateY();
+       opacity: 0; }
+              50% { 
+                 opacity: 1; }
+                 70% { 
+                      opacity: -10; }
+                          100% { transform: translateY(-30vh);
+                              opacity: 0; }
+                             }
+ .bolhas img:nth-child(1) { animation-delay: 2s;}
+ .bolhas img:nth-child(2) { animation-delay: 1s;}
+ .bolhas img:nth-child(3) { animation-delay: 3.5s;}
+ .bolhas img:nth-child(4) { animation-delay: 3s;}
+ .bolhas img:nth-child(5) { animation-delay: 2s;}
+ .bolhas img:nth-child(6) { animation-delay: 4.5s;}
+ .bolhas img:nth-child(7) { animation-delay: 7s;}
+  
+  .bolhas {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     position: absolute;
+    margin: 0;
+    background-color: black;
+  }
+  @media (max-width: 768px) {
+   .footer-navigation { display: block;
+  }
+  nav {
+      display: none;
+  }
+      .cards-content {
+       grid-template-columns: 1fr;
+       margin-top: 150px;
+      }
+      .bolhas img{
+          width: 20px;
+         
+      }
+
+      .cards-med {
+         width: 100%;
+         display: grid;
+         grid-template-columns: 1fr;
+         row-gap: 5px;
+         column-gap: 100px;
+      }
+      .cards-max {
+         width: 100%;
+     
+     }
+     .card {
+      width: 200px;
+      margin-top: 25px;
+      margin-left: 65px;
+  height: 200px;
+     }
+   main {height: 250vh;}
+  }

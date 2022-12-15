@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    
+    list-style: none;
+text-decoration: none;
+}
+
+
+
+header { 
+
+height: 90px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: black;
+
+}
+
+Nav {
+    width: 60%;
+}
+
+Ul {
+
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+}
+    
+li {
+       list-style: none;
+       color: aliceblue;
+       cursor: pointer;
+       font-size: 19px;
+       transition: .5s;
+       font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+ li:hover {
+    color: rgb(25, 187, 216);
+ }
+
+ #logo { width: 90px;
+height: auto;}
+
+#banner {
+    background-image: url(https://a-static.besthdwallpaper.com/aquaman-and-the-lost-kingdom-wallpaper-3440x1440-99404_15.jpg);
+    background-position: 50% 50%; 
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    }
+
+
+.content { display: flex;
+justify-content: center;
+color: aqua;
+margin-top: 50px;
+
+}
+ 
+
+
+.contato {
+    width: 100%;
+    
+    max-width: 500px;
+    color: aqua;
+    font-size: 37px;
+    padding-bottom: 50px;
+}
+.form {
+     display: flex;
+     flex-direction: column;
+     
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(20, 194, 238);
+    border-radius: 5px;
+    color: rgb(21, 128, 199);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.field1 {
+   
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(20, 194, 238);
+    border-radius: 5px;
+    color: rgb(9, 168, 241);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    width: 70px;
+   transition: 1s;
+}
+.field2 {
+   
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(20, 194, 238);
+    border-radius: 5px;
+    color: rgb(9, 168, 241);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    width: 478px;
+   transition: 1s;
+   height: 150px;
+}
+
+.field1:hover { background-color: rgb(107, 218, 157);
+color: black;}
+
+
+.textarea{ 
+    height: 150px;
+    margin-top: 15px;
+   
+}
+
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: space-around;
+  }
+
+  #bruno { color: #00ffff;}
+
+  
+  span {
+  color: aliceblue;
+  font-family: 'Kdam Thmor Pro', sans-serif ;
+  }
+  
+  .footer-navigation {
+      display: none;
+  }
+  .footer-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .bolhas img{
+      width: 50px;
+      animation: bolhas 8s linear infinite;
+  }
+  
+  @keyframes bolhas { 
+      0% { transform: translateY();
+        opacity: 0; }
+               50% { 
+                  opacity: 1; }
+                  70% { 
+                       opacity: -10; }
+                           100% { transform: translateY(-28vh);
+                               opacity: 0; }
+                              }
+  .bolhas img:nth-child(1) { animation-delay: 2s;}
+  .bolhas img:nth-child(2) { animation-delay: 1s;}
+  .bolhas img:nth-child(3) { animation-delay: 3.5s;}
+  .bolhas img:nth-child(4) { animation-delay: 3s;}
+  .bolhas img:nth-child(5) { animation-delay: 2s;}
+  .bolhas img:nth-child(6) { animation-delay: 4.5s;}
+  .bolhas img:nth-child(7) { animation-delay: 7s;}
+   
+   .bolhas {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 10;
+   }
+
+   @media (max-width: 768px) {
+    .footer-navigation { display: block;
+   }
+   nav {
+       display: none;
+   }
+   
+   #banner {
+       background-position: 46%;
+   }
+   
+       
+       .bolhas img{
+           width: 20px;
+           animation: bolhas 7s linear infinite;
+       }
+
+       .contato { margin-left: 50px;}
+
+       .field { height: 40px;
+    width: 185px;}
+
+    .field2 { width: 220px;}
+   }
+  
+ 
